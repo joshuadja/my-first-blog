@@ -7,12 +7,14 @@
 		<link href='//fonts.googleapis.com/css?family=Lobster⊂=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 	</head>
-	<body>
+	<body style="background-color: LightGray;">
+	<p><i>En este blog hablaremos sobre los tipos de productos que ofrece la empresa Apple.</i></p>
 		<div class="page-header">
 		{% if user.is_authenticatedd %}
 			<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 		{% endif %}	
-			<h1><a href="/">Django Daw Blog</a></h1>
+			<h1><a href="/">The Apple New's</a></h1>
+			<img src="https://www.apple.com/apple-events/october-2016/meta/og.png?201709091730" height="230" width="850">
 		</div>
 		<div class="content container">
 			<div class="row">
